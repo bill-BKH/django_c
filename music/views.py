@@ -6,7 +6,7 @@ def home(request):
     all_music = Music.objects.all()
     return render(request, 'music/index.html', {'musics':all_music})
 def rap(request):
-    return HttpResponse('rap ...')
+    return HttpResponse('rat ...')
 
 def gamgin(request):
     all_music = Music.objects.filter(genres='gamgin')
