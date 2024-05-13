@@ -10,3 +10,7 @@ def home(request):
 def gamgin(request):
     all_music = Music.objects.filter(genres='gamgin')
     return render(request, 'music/index_gamgin.html', {'musics':all_music})
+
+
+def shad(request):
+    return HttpResponse('shad ...')
