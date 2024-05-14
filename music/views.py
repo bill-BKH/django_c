@@ -15,3 +15,6 @@ def gamgin(request):
 
 def shad(request):
     return HttpResponse('shad ...')
+
+def pop(request):
+    return HttpResponse('pop...')
