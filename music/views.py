@@ -15,6 +15,9 @@ def gamgin(request):
 def shad(request):
     return HttpResponse('shad ...')
 
+def classic(request):
+    return HttpResponse('classic ...')
+
 def pop(request):
     print('pop musics')
     return HttpResponse('pop ...')
