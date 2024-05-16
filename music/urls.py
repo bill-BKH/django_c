@@ -9,5 +9,4 @@ urlpatterns = [
     path('shad/',views.shad,name='shad'),
     path('pop/',views.pop, name='pop'),
     path('rap/',views.rap,name='rap'),
-
 ]
