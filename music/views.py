@@ -17,4 +17,5 @@ def shad(request):
     return HttpResponse('shad ...')
 
 def pop(request):
+    print('k-pop...')
     return HttpResponse('pop...')
