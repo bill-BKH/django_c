@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>صفحه اضافه کردن</title>
+    </head>
+    <body>
+        <h1>create new todo</h1>
+
+        <form action="{% url 'todo:add_todo' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="todo_text">
+            <select name="priority" id="">
+                <option value="1">مهم</option>
+                <option value="2">نیمه مهم</option>
+                <option value="3">اهمیتی ندارد</option>
+            </select>
+            
+            <input type="submit" value="add">
+        </form>
+        
+    </body>
+</html>

@@ -11,3 +11,4 @@ class Todo(models.Model):
     text = models.CharField(max_length=300)
     created_date = models.DateTimeField(auto_now_add=True)
     priority = models.IntegerField(choices=priority_options)
+    complete = models.BooleanField(default=False)
