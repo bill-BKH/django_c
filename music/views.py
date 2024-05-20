@@ -23,5 +23,5 @@ def pop(request):
     return HttpResponse('pop ...')
 
 def rock(request):
-    print('rock musics')
-    return HttpResponse('rock!')
+    print('rock music')
+    return HttpResponse('rock...')
