@@ -10,4 +10,5 @@ urlpatterns = [
     path("classic",views.classic,name='classic'),
     path('pop/',views.pop, name='pop'),
     path('rap/',views.rap,name='rap'),
+    path('rock/', views.rock,name= 'rock'),
 ]
