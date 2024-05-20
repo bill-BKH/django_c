@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>todo app</title>
+    </head>
+    <body>
+        <h1>this is todo app</h1>
+        <ol>
+            {% for t in todos %}
+                {% if t.priority == 1%}
+                    <li style="color: red;">{{ t.text }}</li>
+                {% elif t.priority == 2 %}
+                    <li style="color: orange;">{{ t.text }}</li>
+                {% elif t.priority == 3 %}
+                    <li style="color: green;">{{ t.text }}</li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </body>
+</html>
