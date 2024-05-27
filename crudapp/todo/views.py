@@ -9,7 +9,6 @@ def todo(request):
     return render(request,'todo/todo.html',{'todos':data})
 
 
-# TODO: show single taks update view with dynamic link
 def add_todo(request):
     if request.method == 'POST':
         x = request.POST.get('priority')
