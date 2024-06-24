@@ -21,3 +21,7 @@ def classic(request):
 def pop(request):
     print('pop musics')
     return HttpResponse('pop ...')
+
+def rock(request):
+    print('rock musics')
+    return HttpResponse('rock ...')
